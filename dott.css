@@ -1,0 +1,215 @@
+
+*,
+html,
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.nav{
+    background-color: rgb(182, 4, 63);
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+    justify-content: flex-end;
+    top: 0;
+    left: 0;
+}
+.nav-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style-type: none;
+    margin-right: 50px;
+    gap: 10px;
+
+}
+.nav-menu li{
+    font-size: 20px;
+}
+.nav-menu li a{
+    text-decoration: none;
+    color: white;
+}
+.nav-menu li :hover{
+    background-color: rgb(47, 55, 99);
+    padding: 26px 20px 27px 20px;
+    transition: 1s;
+} 
+.welcome-section{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin-left: 0px;
+    margin-right: 0px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(23, 24, 27);
+}
+.welcome-section h1{
+    color: white;
+    font-size: 60px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    padding-bottom: 0px;
+}
+.welcome-section p{
+    color: #aa022c;
+    font-size: 30px;
+    margin-top: 0px;
+    margin-bottom: 200px;
+}
+.flex-container{
+    background-color: rgb(69, 87, 136);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.header{
+    color: white;
+    align-items: center;
+    margin-left: 420px;
+    margin-right: 350px;
+    border-bottom: white solid;
+}
+.card{
+    width: 500px;
+    margin-top: 10px;
+    background-color: rgb(49, 59, 68);
+    text-align: center;
+    max-width: 400px;
+}
+.card a{
+    text-decoration: none;
+}
+.card a{
+    color: white;
+    font-size: 20px;
+}
+.code{
+    color: rgb(49, 59, 68);
+}
+.card:hover .code{
+    color: orangered;
+    transition: 1s;
+    }
+    .btn{
+        margin-top: 50px;
+        margin-bottom: 70px;
+        align-items: center;
+        display: inline-block;
+        margin-left: 40px;
+    }
+.btn a{
+    background-color: rgb(49, 59, 68);
+    color: white;
+    padding: 1rem 2rem;
+    text-decoration: none;
+
+}
+.btn :hover{
+    background-color: red;
+    transition: 1s;
+}
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    width: 100%;
+    height: 80vh;
+    background-color: rgb(49, 59, 68);
+}
+.footer-header h1{
+    font-size: 4rem;
+    margin-top: 40px;
+    margin-bottom: 2px;
+    padding-bottom: 0;
+    color: white;
+}
+.footer-header p{
+    font-style: italic;
+    font-size: 20px;
+    margin-top: auto;
+    margin-bottom: 30px;
+    color: rgb(226, 224, 224);
+}
+.end a{
+    color: white;
+    text-decoration: none;
+    font-size: 21px;
+    margin-top: 1px;
+    margin-bottom: 100px;
+    }
+    .end-links{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 100%;
+        font-size: 22px;
+    }
+    .end-links a{
+        text-decoration: none;
+        color: white;
+        transition: 0.5s ease;
+    }
+    .end-links :hover{
+     color: white;
+     transform: translateY(8px);
+    }
+    .end-footer{
+        background-color: rgb(49, 59, 68);
+        border-top: rgb(165, 30, 30) solid;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 0px;
+       
+    }
+    .lst p{
+        color: white;
+        font-size: 20px;
+    }
+    #back-to-top {
+        width: 40px;
+        height: 40px;
+        background-color: black;
+        right: 10px;
+        bottom: 10px;
+        position: fixed;
+        color: white;
+        animation: beat 2s ease-in-out infinite;
+    }
+    .fa {
+        color: white;
+    }
+    @keyframes beat {
+        0% {
+            transform: scale(1);
+        }
+        50% {
+            transform: scale(1.5);
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
+
+    @media (max-width: 768px) {
+        .nav {
+            justify-content: center;
+        }
+       
+        .nav-menu li {
+            text-align: center;
+        }
+    }
+   

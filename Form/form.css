@@ -1,0 +1,54 @@
+div.container {
+    margin-left: 20rem;
+    margin-right: 3rem;
+}
+.container {
+    background-color: rgba(19, 4, 73, 0.705);
+width: 600px;
+border: none;
+padding: 50px;
+color: white;
+font-size: 22px;
+font-family: Arial, Helvetica, sans-serif;
+}
+.h {
+font-family: Arial;
+color: white;
+}
+.p {
+font-family: Arial;
+color: white;
+}
+    .I {    
+background-image: linear-gradient(rgba(9,0,77,90.65),rgba(9,0,77,90.65)), url(pupils.jpg);
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+}
+input[type=text], select {
+width: 100%;
+padding: 12px 20px;
+margin: 8px 0;
+display: inline-block;
+border: 1px solid white;
+border-radius: 4px;
+box-sizing: border-box;
+}
+input[type=number], select {
+width: 100%;
+padding: 12px 20px;
+margin: 8px 0;
+display: inline-block;
+border: 1px solid white;
+border-radius: 4px;
+box-sizing: border-box;
+}
+input[type=submit] {
+width: 100%;
+background-color: rgb(8, 190, 78);
+color: white;
+padding: 14px 20px;
+margin: 8px 0;
+border: none;
+border-radius: 4px
+}

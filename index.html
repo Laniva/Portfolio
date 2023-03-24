@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        nav {
+            height: 40px;
+            width: 100%;
+            display: block;
+            text-align: center;
+            margin:0 auto;
+            background: #fc575e;
+        }
+        nav a {
+            display: block;
+            text-decoration: none;
+        }
+        nav a:hover{
+            background: #223433;
+            color: white;
+            transition: 1s;
+        }
+        nav ul{
+            list-style-type: none;
+        }
+        nav ul li {
+            float: right;
+            width: 140px;
+            height: 40px;
+            line-height: 40px;
+            background: #fc575e;
+        }
+        nav ul ul li {
+            position: relative;
+            display: none;
+        }
+        nav ul ul ul{
+            display: none;
+        }
+        nav ul ul li:hover ul{
+            display: block;
+            position: absolute;
+            right: 140px;
+            width: 140px;
+            top: 0px;
+            transition: 1s;
+        }
+        nav ul li:hover ul li{
+            display: block;
+            transition: 1s;
+        }
+
+    </style>
+</head>
+<body>
+        <nav>
+            <ul>
+                <li><a href="#">Courses</a>
+                    <ul>
+                        <li><a href="#">C++</a></li>
+                        <li><a href="#">C#</a></li>
+                        <li><a href="#">Java</a></li>
+                        <li><a href="#">Web Dev</a>
+                          <ul>
+                            <li><a href="#">HTML</a></li>
+                            <li><a href="#">CSS</a></li>
+                            <li><a href="#">Javascript</a></li>
+                          </ul>
+                        </li>
+                        <li><a href="#">Python</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Operating System</a>
+                   <ul>
+                    <li><a href="#">Windows</a></li>
+                    <li><a href="#">Macintosh</a></li>
+                    <li><a href="#">Linus</a></li>
+                   </ul>
+                </li>
+                <li><a href="#">Projects</a>
+                  <ul>
+                    <li><a href="#">Forms</a></li>
+                    <li><a href="#">Porfolios</a></li>
+                    <li><a href="#">List items</a></li>
+                    <li><a href="#">Tribute page</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+</body>
+</html>

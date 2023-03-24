@@ -1,0 +1,376 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.header{
+    background-image: linear-gradient(rgba(5, 0, 41, 0.836),rgba(5, 0, 41, 0.836)), url(https://cdn11.bigcommerce.com/s-mxy47re2a9/product_images/uploaded_images/home-appliances-web-ad.png);
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    background-size: contain;
+    width: 100%;
+    height: 100vh;
+}
+.nav-bar{
+    
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.logo{
+    height: 250px;
+    width: 300px;
+    display: flex;
+    justify-content: flex-start;
+    margin-right: 500px;
+}
+.nav-bar li{
+    list-style-type: none;
+}
+.nav-bar li a{
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    padding: 17px;
+    font-weight: 500px;
+}
+.nav-bar li::after{
+    content: '';
+    height: 2px;
+    background: red;
+    margin: auto;
+    width: 0%;
+    display: block;
+    transition: 0.5s;
+}
+.nav-bar li:hover::after{
+    width: 70%;
+}
+h1{
+    color: white;
+    font-size: 70px;
+    margin-left: 60px;
+}
+.pal{
+    color: white;
+    font-size: 25px;
+    margin-left: 60px;
+    top: 0;
+}
+h2{
+    color: white;
+    font-size: 30px;
+    margin-left: 60px;
+    top: 0px;
+}
+.button1{
+    background-color: white;
+    color: black;
+    border-radius: 32px;
+    font-size: 20px;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    padding: 8px 18px;
+    margin-left: 40px;
+    margin-top: 20px;
+}
+.button2{
+    border: white solid;
+    font-size: 20px;
+    color: white;
+    border-radius: 32px;
+    padding: 6px 18px;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    background-color: transparent;
+    margin-left: 25px;
+    margin-top: 20px;
+    border-width: 1px;
+}
+.btn .button1:hover{
+    background-color: black;
+    color: white;
+    transition: 0.7s;
+}
+.btn .button2:hover{
+    background-color: rgb(250, 3, 77);
+    color: white;
+    border: none;
+    transition: 0.7s;
+}
+.items {
+    background: transparent;
+    height: 40vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    text-align: center;
+    padding: 10px;
+}
+.items-col{
+    width: 700px;
+    height: 140px; 
+}
+.items-col img{
+    width: 100%;
+    padding: 16px;
+}
+.items-col img{
+    animation-name: move;
+    animation-duration: 30s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+}
+@keyframes move {
+    0% {transform: translatex(200%);}
+    100% {transform: translatex(-450%);}
+}
+.items-col h3::after{
+    content: '';
+    height: 3px;
+    width: 0%;
+    background: red;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.items-col h3:hover::after{
+   width: 100%;
+}
+.flex-container{
+    background-color: aquamarine;
+    height: 60vh;
+    width: 80%;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 140px;
+    margin-top: 100px;
+    
+}
+.flex-child{
+    width: 500px;
+}
+.flex-child h3{
+    margin-top: 110px;
+    margin-left: 90px;
+    font-size: 30px;
+    margin-bottom: 0;
+}
+.flex-child p{
+    margin-left: 30px;
+    margin-top: 0;
+    font-size: 20px;
+    text-align: center;
+}
+.flex-child video{
+    padding-bottom: 40px;
+}
+.he{
+    text-align: center;
+    font-size: 50px;
+    color: black;
+    margin-top: 70px;
+}
+.flex-div{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background-color: rgb(218, 230, 230);
+    height: 130vh;
+    width: 100%;
+}
+.div-child{
+    width: 300px;
+    height: 350px;
+    background-color: rgb(218, 230, 230);
+    margin-top: 60px;
+    padding: 0px;
+}
+.div-child h4{
+    margin-left: 10px;
+    transform: translateY(-60%);
+}
+.div-child p{
+    margin-top: 0px;
+    transform: translateY(-160%);
+    margin-left: 10px;
+}
+.div-child .tr{
+    transform: translateY(-220%);
+    margin-left: 10px;
+}
+.h5{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.div-style{
+    background-color: blue;
+    background-image: linear-gradient(to right,rgb(4, 39, 235) , rgb(203, 229, 241));
+    margin-top: 250px;
+    height: 70vh;
+    width: 100%;
+    align-items: center;
+    padding: 30px;
+}
+.div-style p{
+    margin-left: 70px;
+    margin-top: 0px;
+    color: white;
+}
+#hit{
+    margin-bottom: 0px;
+    margin-top: 50px;
+    color: white;
+    font-weight: lighter;
+}
+.div-style h3{
+    margin-left: 70px;
+    margin-top: 40px;
+}
+#het{
+    margin-top: 2px;
+    color: white;
+}
+.div-style h2{
+    margin-left: 70px;
+}
+.button3{
+    background-color: white;
+    color: black;
+    padding: 9px 18px;
+    border-radius: 21px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 19px;
+    margin-left: 80px;
+    margin-top: 700px;
+}.btn2 .button3:hover{
+    background-color: black;
+    color: white;
+    transition: 1s;
+}
+.course{
+    width: 100%;
+    text-align: center;
+    padding: 100px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 10px;
+}
+.div-col{
+    padding-left: 20px;
+}
+.fit-dis{
+    width: 100%;
+    height: 90px;
+    border-top: rgb(202, 201, 201) solid;
+    border-bottom: rgb(202, 201, 201) solid;
+    border-width: 2px;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 80px;
+}
+.fit-dis a{
+    text-decoration: none;
+    color: black;
+    font-size: 28px;
+    margin-top: 40px;
+    padding-top: 50px;
+}
+.footer-section{
+    
+    background-color: rgb(44, 42, 42);
+    padding: 30px;
+    height: 50vh;
+    margin: auto;
+}
+.ftr-sec{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 70px;
+}
+.log{
+    height: 150px;
+    width: 200px;
+    display: flex;
+   align-items: start;
+    padding-top: 0px;
+}
+li{
+    list-style-type: none;
+    color: white;
+    font-weight: lighter;
+}
+input[type=text], select{
+    width: 80%;
+padding: 15px 20px;
+margin-top: 8px;
+margin-left: 70px;
+margin-right: 0px;
+display: inline-block;
+border: 1px solid rgb(194, 193, 193);
+background-color: rgb(240, 239, 239);
+border-width: 1px;
+border-radius: 4px;
+box-sizing: border-box;
+}
+.button4{
+    background-color: rgb(22, 178, 250);
+    color: white;
+    border: none;
+    padding: 11px 18px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 19px;
+    margin-left: 70px;
+    margin-top: 20px;
+}
+.button4:hover{
+    background-color: rgb(21, 62, 247);
+    transition: 1.5s;
+}
+.last{
+    border-top: black solid;
+    width: 100%;
+    height: 15vh;
+    background-color: rgb(44, 42, 42);
+    margin-left: 0px;
+    margin-right: 0px;
+    text-align: center;
+}
+.last ul li{
+    display: inline-block;
+    list-style-type: none;
+    margin-top: 15px;
+    
+}
+.last ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 11px;
+    transition: 1s;
+}
+.last .fab {
+    padding: 14px;
+}
+.last ul li:hover{
+    transform: translateY(10px);
+    transition: 0.5s;
+}
+.last ul li a:hover{
+    color: rgb(25, 57, 199);
+    top: 30%;
+    
+}

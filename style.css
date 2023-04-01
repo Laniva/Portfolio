@@ -1,4 +1,6 @@
-
+:root {
+    --purple-red: rgb(23, 24, 27);
+}
 *,
 html,
 body {
@@ -49,7 +51,7 @@ body {
     margin-right: 0px;
     justify-content: center;
     align-items: center;
-    background-color: rgb(23, 24, 27);
+    background-color: var(--purple-red);
 }
 .welcome-section h1{
     color: white;

@@ -3,45 +3,86 @@
 }
 *,
 html,
-body {
-    font-family: 'Poppins', sans-serif;
+body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
-.nav{
-    background-color: rgb(182, 4, 63);
-    width: 100%;
-    height: 80px;
-    position: fixed;
-    display: flex;
-    align-items: center;
-    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
-    justify-content: flex-end;
+header{
+    position: absolute;
     top: 0;
     left: 0;
+    background-color: red;
+    position: fixed;
+    width: 100%;
+    padding: 0 100px;
+    box-sizing: border-box;
+    
 }
-.nav-menu {
+header .logo{
+    color: white;
+    height: 50px;
+    line-height: 50px;
+    font-size: 24px;
+    float: left;
+}
+nav{
+    float:right
+}
+nav ul{
+    margin: 0;
+    padding: 0;
     display: flex;
-    align-items: center;
-    justify-content: space-around;
+}
+nav ul li{
     list-style-type: none;
-    margin-right: 50px;
-    gap: 10px;
-
 }
-.nav-menu li{
-    font-size: 20px;
-}
-.nav-menu li a{
+nav ul li a{
     text-decoration: none;
     color: white;
+    padding: 17px;
+    height: 50px;
+    line-height: 50px;
+    transition: 0.5s;
 }
-.nav-menu li :hover{
-    background-color: rgb(47, 55, 99);
-    padding: 26px 20px 27px 20px;
-    transition: 1s;
-} 
+nav ul li a:hover,
+nav ul li a.active{
+    background-color: rgb(33, 28, 56);
+}
+ .img{
+    color: rgb(255, 255, 255);
+    float: right;
+    line-height: 50px;
+    width: 30px;
+    display: none;
+
+}
+@media (max-width: 600px) {
+    header {
+        padding: 0 40px;
+    }
+    .img{
+        display: block;
+    }
+    nav{
+        /* display: none; */
+        position: absolute;
+        width: 100%;
+        background-color: #333;
+        text-align: center;
+        top: 50px;
+        left: 0;
+        overflow: hidden;
+        transition: max-height 0.5s;
+    }
+    nav ul{
+        display: block;
+    }
+}
+
+
+
 .hero-section{
     width: 100%;
     height: 100vh;
@@ -162,8 +203,8 @@ body {
         background-color: rgb(49, 59, 68);
         border-top: rgb(165, 30, 30) solid;
         width: 100%;
-        display: flex;
-        justify-content: space-evenly;
+        height: 100%;
+        text-align: center;
         margin-top: 0px;
        
     }
@@ -195,14 +236,3 @@ body {
             transform: scale(1);
         }
     }
-
-    @media (max-width: 768px) {
-        .nav {
-            justify-content: center;
-        }
-       
-        .nav-menu li {
-            text-align: center;
-        }
-    }
-   

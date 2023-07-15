@@ -11,20 +11,19 @@
 </head>
 
 <body>
-    <nav class="nav">
-<ul class="nav-menu">
-    <li>
-        <a href="#">About</a>
-    </li>
-    <li>
-        <a href="#">Work</a>
-    </li>
-    <li>
-        <a href="#">Contact</a>
-    </li>
-</ul>
-    </nav>
-
+    <header>
+        <div class="logo">LOGO</div>
+        <nav id="navmenu">
+            <ul>
+                <li><a href="#" class="active">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">SERVICES</a></li>
+                <li><a href="#">PROJECTS</a></li>
+                <li><a href="#">CONTACTS</a></li>
+            </ul>
+        </nav>
+        <img src="images/menu.png" class="img" id="menutoggle">
+    </header>
 
 
     <!-----------------------HERO SECTION--------------->
@@ -91,9 +90,24 @@
 </section> 
     <footer class="end-footer">
         <div class="lst">
-            <p>**This is just a fake portfolio. All the projects and contact details given are not real.            Created for freeCodeCamp</p>
+            <p>**This is just a fake portfolio. All the projects and contact details given are not real.            Created for freeCodeCamp</p> 
         </div>
         <button id="back-to-top"><i class="fa-solid fa-hand-back-point-up"></i></button>
     </footer>
+
+    <script>
+        let menuItem = document.querySelector("#navmenu");
+        let menutoggle = document.querySelector("#menutoggle")
+        menuItem.style.maxHeight = "0px";
+        function menuIcon() {
+            if(menuItem.style.maxHeight == "0px") {
+                menuItem.style.maxHeight = "300px";
+            }
+            else {menuItem.style.maxHeight = "0px"};
+        }
+        menutoggle.addEventListener("click", () => {
+            menuIcon();
+        })
+    </script>
 </body>
 </html>

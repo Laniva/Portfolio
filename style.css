@@ -9,22 +9,22 @@ body{
     box-sizing: border-box;
     font-family: sans-serif;
 }
-header{
+.navbar{
     position: absolute;
     top: 0;
     left: 0;
-    background-color: red;
+    background-color: transparent;
     position: fixed;
     width: 100%;
     padding: 0 100px;
     box-sizing: border-box;
     
 }
-header .logo{
+.navbar .logo img{
     color: white;
-    height: 50px;
+    height: 60px;
     line-height: 50px;
-    font-size: 24px;
+    font-size: 28px;
     float: left;
 }
 nav{
@@ -42,13 +42,20 @@ nav ul li a{
     text-decoration: none;
     color: white;
     padding: 17px;
+    margin: 10px 5px 10px 5px;
     height: 50px;
+    border-radius: 5px;
+    background-color: rgb(30, 6, 139);
     line-height: 50px;
     transition: 0.5s;
 }
-nav ul li a:hover,
-nav ul li a.active{
-    background-color: rgb(33, 28, 56);
+nav ul li a:hover{
+    background-color: transparent;
+    border-radius: 5px;
+    border: white 2px solid;
+}
+.navbar .active{
+    background-color: black;
 }
  .img{
     color: rgb(255, 255, 255);
@@ -89,7 +96,9 @@ nav ul li a.active{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--purple-red);
+    background-size: cover;
+    background-image: url(images/port\ 2.jpeg);
+    /* background-color: var(--purple-red); */
 }
 .hero-section h1{
     color: white;
@@ -116,19 +125,22 @@ nav ul li a.active{
 
 
 /* .projects */
-.projects {
-    background-color: rgb(69, 87, 136);
+.project {
+    margin-top: 50px;
     width: 100%;
+    align-items: center;
+}
+.header{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 20px;
 }
 .flex-container{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
-.header{
-    color: white;
-    align-items: center;
-}
+
 .card{
     width: 500px;
     margin-top: 10px;
@@ -220,12 +232,12 @@ nav ul li a.active{
         width: 100%;
         height: 100%;
         text-align: center;
-        margin-top: 0px;
        
     }
     .lst p{
         color: white;
         font-size: 20px;
+        padding: 20px;
     }
     #back-to-top {
         width: 40px;
